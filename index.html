@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>G. Akhil Chowdary – Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f7fb; --surface:#ffffff; --ink:#0b1426; --muted:#46536a; --line:#d3dcec; --red:#1d4ed8; --red-deep:#14307a; --tag:#e3ebfd; --tag-ink:#1b3fa8;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#0a1020;--surface:#121b30;--ink:#e8eefb;--muted:#a3b2d0;--line:#223256;--red:#6b9bff;--tag:#1a2a52;--tag-ink:#b5ccff}
+}
+:root[data-theme="dark"]{--bg:#0a1020;--surface:#121b30;--ink:#e8eefb;--muted:#a3b2d0;--line:#223256;--red:#6b9bff;--tag:#1a2a52;--tag-ink:#b5ccff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;margin:0;line-height:1.1}
+a{color:var(--red)}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:4px}
+nav{position:sticky;top:0;z-index:10;display:flex;gap:4px;flex-wrap:wrap;justify-content:center;padding:10px 16px;background:var(--red-deep);}
+nav a{color:#fff;text-decoration:none;padding:6px 14px;border-radius:999px;font-weight:500;font-size:15px}
+nav a:hover{background:rgba(255,255,255,.18)}
+#home{background:linear-gradient(135deg,#2f6bff 0%,#1d4ed8 55%,#14307a 100%);color:#fff;padding:96px max(20px,6vw) 88px;position:relative;overflow:hidden}
+#home::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;border:60px solid rgba(255,255,255,.08)}
+.wrap{max-width:1000px;margin:0 auto;position:relative;z-index:1}
+#home .status{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.4);padding:7px 16px;border-radius:999px;font-weight:500;font-size:15px}
+#home h1{font-size:clamp(46px,10vw,104px);font-weight:800;letter-spacing:-.03em;margin:26px 0 20px;animation:rise .8s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+#home p{max-width:56ch;font-size:20px;margin:0 0 32px;color:#dbe6ff}
+.btn{display:inline-block;background:#fff;color:var(--red-deep);padding:13px 26px;border-radius:10px;text-decoration:none;font-weight:700;margin-right:10px}
+.btn.ghost{background:transparent;color:#fff;border:2px solid #fff}
+section.s{padding:76px max(20px,6vw)}
+section.s:nth-of-type(even){background:var(--surface);border-block:1px solid var(--line)}
+section.s h2{font-size:clamp(30px,4.5vw,44px);font-weight:800;margin-bottom:30px;display:flex;align-items:center;gap:16px}
+section.s h2::after{content:"";height:4px;flex:1;max-width:120px;background:var(--red);border-radius:2px}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.box{background:var(--bg);border:1px solid var(--line);border-left:6px solid var(--red);border-radius:12px;padding:26px}
+.s:nth-of-type(even) .box{background:var(--bg)}
+.box h3{font-size:22px;margin-bottom:12px}
+.box p{margin:0;color:var(--muted)}
+.box ul{margin:0;padding-left:20px;color:var(--muted)}
+.box li{margin-bottom:4px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{background:var(--tag);color:var(--tag-ink);padding:6px 14px;border-radius:999px;font-size:15px;font-weight:500}
+.meta{display:inline-block;background:var(--red);color:#fff;font-size:13px;font-weight:700;padding:3px 10px;border-radius:6px;margin-bottom:12px}
+.stack{font-size:14px;color:var(--muted);margin-top:14px!important;font-weight:500}
+.edu{list-style:none;padding:0!important;border-left:3px solid var(--line);margin-left:6px!important}
+.edu li{position:relative;padding-left:20px;margin-bottom:14px}
+.edu li::before{content:"";position:absolute;left:-9px;top:8px;width:15px;height:15px;border-radius:50%;background:var(--red)}
+.edu b{color:var(--ink)}
+.mail{font-family:"Bricolage Grotesque",sans-serif;font-size:clamp(20px,4vw,32px);font-weight:800;word-break:break-all}
+footer{background:var(--red-deep);color:#cfdcff;text-align:center;padding:30px 20px;font-size:14px}
+</style>
+</head>
+<body>
+<nav aria-label="Main"><a href="#home">Home</a><a href="#about">About Me</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a></nav>
+
+<header id="home"><div class="wrap">
+  <span class="status">B.Tech First Year · CSE (AI) · Joy University</span>
+  <h1>G. Akhil Chowdary</h1>
+  <p>I’m a computer science student who enjoys turning ideas into working software. I’m looking for internships where I can build real products and keep learning.</p>
+  <a class="btn" href="#projects">View my projects</a><a class="btn ghost" href="#contact">Contact me</a>
+</div></header>
+
+<section class="s" id="about"><div class="wrap">
+  <h2>About Me</h2>
+  <div class="grid">
+    <div class="box"><h3>Education</h3>
+      <ul class="edu"><li><b>School</b><br>Tirumala</li><li><b>College</b><br>Tirumala</li><li><b>University</b><br>Joy University, B.Tech CSE (AI)</li></ul></div>
+    <div class="box"><h3>Interests</h3>
+      <ul><li>Web development</li><li>Problem solving and algorithms</li><li>Open-source projects</li><li>Machine learning basics</li></ul></div>
+    <div class="box"><h3>Goals</h3>
+      <p>I’m learning full-stack development and data structures this year. My goal is to work as a software engineer on products that people use every day.</p></div>
+  </div>
+</div></section>
+
+<section class="s" id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="box"><h3>Programming languages</h3><div class="tags"><span>Python</span><span>HTML &amp; CSS</span></div></div>
+    <div class="box"><h3>Technical skills</h3><div class="tags"><span>HTML &amp; CSS</span><span>Git &amp; GitHub</span><span>SQL</span><span>Data structures</span><span>React</span></div></div>
+    <div class="box"><h3>Other skills</h3><div class="tags"><span>Teamwork</span><span>Communication</span><span>Time management</span><span>Quick learner</span></div></div>
+  </div>
+</div></section>
+
+<section class="s" id="projects"><div class="wrap">
+  <h2>Projects</h2>
+  <div class="grid">
+    <article class="box"><span class="meta">Academic project</span><h3>Student Record Manager</h3>
+      <p>A command-line app to add, search and update student records. It stores data in a local database and exports reports as CSV.</p><p class="stack">Python, SQLite</p></article>
+    <article class="box"><span class="meta">Personal project</span><h3>Weather Dashboard</h3>
+      <p>A responsive web page that shows the current weather and a five-day forecast for any city a visitor searches.</p><p class="stack">HTML, CSS, JavaScript</p></article>
+  </div>
+</div></section>
+
+<section class="s" id="achievements"><div class="wrap">
+  <h2>Achievements</h2>
+  <div class="grid">
+    <div class="box"><h3>Certifications</h3><ul><li>Python for Everybody</li><li>Responsive Web Design</li></ul></div>
+    <div class="box"><h3>Awards</h3><ul><li>Merit scholarship, 2026</li></ul></div>
+    <div class="box"><h3>Participation</h3><ul><li>Hackathon participant, 2026</li><li>Coding club member</li></ul></div>
+  </div>
+</div></section>
+
+<section class="s" id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <div class="box">
+    <p>I’m open to internships, projects and collaborations. Email me at:</p>
+    <p style="margin-top:12px"><a class="mail" href="mailto:akhilsuryavardhanguttikonda@gmail.com">akhilsuryavardhanguttikonda@gmail.com</a></p>
+  </div>
+</div></section>
+
+<footer>© 2026 G. Akhil Chowdary</footer>
+</body>
+</html>
